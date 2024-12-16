@@ -47,7 +47,7 @@ echo "to vpn1.adm.u-tokyo.ac.jp" >>$OUTPUT_FILE
 ping -c 4 vpn1.adm.u-tokyo.ac.jp >>$OUTPUT_FILE 2>&1
 echo "Testing Internet Connectivity... L4"
 echo >>$OUTPUT_FILE
-echo "----------------TCP ping---------------" >>$OUTPUT_FILE
+echo "----------------netcat to VPN server on TCP443---------------" >>$OUTPUT_FILE
 nc -t vpn1.adm.u-tokyo.ac.jp 443 >>$OUTPUT_FILE 2>&1
 
 echo >>$OUTPUT_FILE
